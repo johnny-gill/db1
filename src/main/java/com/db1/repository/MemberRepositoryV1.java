@@ -2,6 +2,7 @@ package com.db1.repository;
 
 import com.db1.connection.DBConnectionUtil;
 import com.db1.domain.Member;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jdbc.support.JdbcUtils;
 

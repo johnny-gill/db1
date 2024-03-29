@@ -1,10 +1,7 @@
 package com.db1.service;
 
 import com.db1.domain.Member;
-import com.db1.repository.MemberRepository;
-import com.db1.repository.MemberRepositoryV3;
-import com.db1.repository.MemberRepositoryV4_1;
-import com.db1.repository.MemberRepositoryV4_2;
+import com.db1.repository.*;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.AfterEach;
@@ -49,7 +46,7 @@ public class MemberServiceV4Test {
 
         @Bean
         MemberRepository memberRepository() {
-            return new MemberRepositoryV4_2(dataSource);
+            return new MemberRepositoryV5(dataSource);
         }
 
         @Bean
